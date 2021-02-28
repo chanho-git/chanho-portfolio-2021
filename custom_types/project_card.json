@@ -1,0 +1,11 @@
+{
+  "Main" : {
+    "test" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "test"
+      }
+    }
+  }
+}
