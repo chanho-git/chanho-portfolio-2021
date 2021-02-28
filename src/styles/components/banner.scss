@@ -1,0 +1,27 @@
+.main {
+  height: 84vh;
+  background-color: $white;
+  @include media('<=phone') {
+    height: 87vh;
+  }
+  .row {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0;
+      padding-top: 10%;
+      color:$black;
+    }
+    .line {
+
+    }
+    // Hello👋 I’m Chanho,
+    &:nth-child(1) {
+
+    }
+    // a product designer~
+    &:nth-child(2) {
+
+    }
+  }
+}

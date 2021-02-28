@@ -1,0 +1,40 @@
+.header {
+  //background-color: rebeccapurple;
+  position: relative;
+  width: 100%;
+  height: 16vh;
+  @include media('<=phone') {
+    height: 13vh;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    a {
+      color: $black;
+      text-decoration: none;
+      font-weight: 500;
+      font-family: 'Lora', Georgia, sans-serif;
+    }
+  }
+  .navigation {
+    cursor: pointer;
+    nav {
+      a {
+        margin: 0 35px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        color: #767676;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .active {
+        color: $black;
+        font-weight: 700;
+      }
+    }
+  }
+}
