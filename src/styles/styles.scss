@@ -30,7 +30,7 @@ html, body {
     width: 1080px;
     min-width: 1080px;
   }
-  @include media("<=1080") {
+  @include media("<=1080px") {
     width: 100%;
     min-width: 100%;
   }

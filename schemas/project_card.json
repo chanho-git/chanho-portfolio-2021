@@ -1,0 +1,22 @@
+{
+  "Main" : {
+    "test" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "test"
+      }
+    },
+    "image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 560,
+          "height" : 560
+        },
+        "thumbnails" : [ ],
+        "label" : "image"
+      }
+    }
+  }
+}

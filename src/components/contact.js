@@ -1,8 +1,9 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = (props) => {
     return (
         <section className="contact">
+            <h2>{props.data.test.text}</h2>
             <div className="container">
                 <div className="row">
                     <div className='contact-body'>
@@ -17,5 +18,6 @@ const Contact = () => {
         </section>
     )
 }
+
 
 export default Contact;
