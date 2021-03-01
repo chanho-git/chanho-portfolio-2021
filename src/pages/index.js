@@ -13,10 +13,10 @@ const Home = (props) => {
       <>
         <Header/>
         <Banner/>
-        <ProjectCards/>
           {props.data.projects.edges.map(project => (
-              <Contact data={ project.node.data }/>
+              <ProjectCards data={ project.node.data }/>
           ))}
+        <Contact/>
       </>
   );
 };
@@ -24,17 +24,24 @@ const Home = (props) => {
 export default Home
 
 export const query = graphql`
-    query projects{
-      projects: allPrismicProjectCard {
-            edges {
-              node {
-                data {
-                  test {
-                    text
-                  }
-                }
-              }
+  query projects {
+    projects : allPrismicProjectCard {
+      edges {
+        node {
+          uid
+          data {
+            homepage_project_hero {
+              url
+            }
+            homepage_project_title {
+              text
+            }
+            homepage_project_category {
+              text
             }
           }
         }
+      }
+    }
+  }
 `

@@ -1,21 +1,34 @@
 {
   "Main" : {
-    "test" : {
-      "type" : "StructuredText",
+    "uid" : {
+      "type" : "UID",
       "config" : {
-        "single" : "heading1",
-        "label" : "test"
+        "label" : "homepage_project"
       }
     },
-    "image" : {
+    "homepage_project_hero" : {
       "type" : "Image",
       "config" : {
         "constraint" : {
-          "width" : 560,
-          "height" : 560
+          "width" : 729,
+          "height" : 530
         },
         "thumbnails" : [ ],
-        "label" : "image"
+        "label" : "homepage_project_hero"
+      }
+    },
+    "homepage_project_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "homepage_project_title"
+      }
+    },
+    "homepage_project_category" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading4",
+        "label" : "homepage_project_category"
       }
     }
   }

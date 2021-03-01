@@ -1,9 +1,8 @@
 import React from "react";
 
-const Contact = (props) => {
+const Contact = () => {
     return (
         <section className="contact">
-            <h2>{props.data.test.text}</h2>
             <div className="container">
                 <div className="row">
                     <div className='contact-body'>
